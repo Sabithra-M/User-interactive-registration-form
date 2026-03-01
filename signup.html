@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <!-- link file css -->
+    <link rel="stylesheet" href="signup.css">
+    <!-- link file script -->
+    <script src="signup.js"></script>
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <h1>Hello, friend!</h1>
+            <form>
+                <div class="input-box">
+                    <i id="user-icon" class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Username" id="username">
+                    <span id="e-name"></span>
+                </div>
+                
+                <div class="input-box">
+                    <i id="mail-icon" class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email" id="email">
+                    <span id="e-mail"></span>
+                </div>
+
+                <div class="input-box">
+                     <i id="password-icon" class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password" id="password">
+                    <span id="e-password"></span>
+                </div>
+
+                <label class="check">
+                    <input type="checkbox">
+                    <span></span>
+                    I read and agree to <a href="#">Terms & Conditions</a>
+                </label>
+                <button onclick="return Submit()" class="btn">Sign Up</button>
+                <span class="reg">Already have an account? <a href="login.html"> Login</a></span>
+            </form>
+        </div>
+        <div class="right-container">
+            <h1>Glad to see you!</h1>
+            <p>We're excited to have you here.</p>
+            <p>Create your account and start your journey with us today.</p>
+        </div>
+    </div>
+
+</body>
+</html>
