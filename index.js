@@ -18,7 +18,7 @@ function Submit()
         document.getElementById("mail-icon").style.transform = "translateY(-100%)";
         return false;
     }
-    if(!Email.includes("@")){
+    else if(!Email.includes("@")){
         document.getElementById("e-mail").innerHTML="Please enter a valid email address.";
         document.getElementById("mail-icon").style.transform = "translateY(-100%)";
         document.getElementById("e-mail").style.color="darkgreen";
@@ -33,7 +33,13 @@ function Submit()
         document.getElementById("password-icon").style.transform = "translateY(-100%)";
         return false;
     }
-    if(Password.length < 6){
+    else if(isNaN(Password)){
+        document.getElementById("e-password").innerHTML="Password must contain numbers only!.";
+        document.getElementById("password-icon").style.transform = "translateY(-100%)";
+        document.getElementById("e-password").style.color="darkgreen";
+        return false;
+    }
+    else if(Password.length < 6){
         document.getElementById("e-password").innerHTML="Password must be at least 6 charectors long.";
         document.getElementById("password-icon").style.transform = "translateY(-100%)";
         document.getElementById("e-password").style.color="darkgreen";

@@ -23,6 +23,12 @@ function Login()
         document.getElementById("password-icon").style.top="20%";
         return false;
     }
+    if(isNaN(Password)){
+        document.getElementById("E-password").innerHTML="Password must contain numbers only!.";
+        document.getElementById("E-password").style.color="darkgreen";
+        document.getElementById("password-icon").style.top="20%";
+        return false;
+    }
     if(Password.length < 6){
         document.getElementById("E-password").innerHTML="Password must be at least 6 characters long.";
         document.getElementById("E-password").style.color="darkgreen";
